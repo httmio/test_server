@@ -31,5 +31,5 @@ async def vaild_qrcode(qrcode: QRCode):
 
 @app.get("/lineme", response_class=HTMLResponse)
 async def lineme_test():
-    html_file = open("line_test.html", "r").read()
+    html_file = open("line_test.html", "r", encoding="utf8").read()
     return html_file
